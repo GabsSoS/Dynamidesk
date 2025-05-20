@@ -7,6 +7,3 @@ from django.http import HttpResponse
 def login(request):
     nome = 'lucas'
     return render(request, 'login_us.html', {'nome': nome})
-
-def cadastro(request):
-    return HttpResponse('tela cadastro')
