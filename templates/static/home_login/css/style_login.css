@@ -29,37 +29,47 @@
 }
 
 .login-us {
-    position: relative;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
     width: 350px;
-    height: 540px;
-
+    height: 540px;    
 }
 
-
+.title {
+    font-size: 40px;
+    font-family: sans-serif;
+    position: relative;
+    top: -30px;
+}
 
 /* espaço de login para o email */
-.login-email {
-    width: 350px;
+.login-email,
+.login-senha {
+    width: 300px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 30px;
     border: 2px solid #ADB5BD;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
 }
 
-/* espaço de login para a senha */
-.login-senha {
-    width: 350px;
-    height: 60px;
-    border-radius: 50px;
-    border: 2px solid #ADB5BD;
-    margin-bottom: 30px;
-}
+
+
 
 .button-login {
     width: 175px;
     height: 60px;
-    border-radius: 50px;
-    background-color: #0077B6;
+    border-radius: 30px;
+    background-color: #1d3f6b;
+    color: white;
     border: none;
+}
+
+.button-login:hover{
+    transition: 0.3s ease;
+    cursor: pointer;
+    background-color: #038ad2 ;
 }
