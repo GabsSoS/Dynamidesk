@@ -10,10 +10,11 @@ h1{
 .bloco-esquerdo {
     width: 50%;
     height: 100vh;
-    background-color: #023E8A;
+    background-color: #1d3f6b;
 }
 
 .bloco-direiro {
     width: 50%;
     height: 100vh;
+    background-color: #d1b3cd;
 }
