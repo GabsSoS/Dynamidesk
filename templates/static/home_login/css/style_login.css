@@ -28,12 +28,13 @@
     justify-content: center;
     align-items: center; 
     width: 350px;
-    height: 540px;    
+    height: 550px;
+
 }
 
 .title {
     font-size: 40px;
-    font-family: sans-serif;
+    font-family: "Roboto";
     position: relative;
     top: -30px;
 }
@@ -48,7 +49,30 @@
     margin-bottom: 20px;
     position: relative;
     padding-left: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+ 
 }
+
+/* campo dentro do input de email e senha*/
+.login-email::placeholder,
+.login-senha::placeholder {
+    font-family: 'Roboto';
+}
+
+.login-email:focus,
+.login-senha:focus {
+    color: #038ad2;
+    outline: none;
+    border: solid 2px #038ad2;
+    
+}
+
+.login-email:hover,
+.login-senha:hover {
+    border: solid 2px #038ad2;
+}
+
+
 
 .button-login {
     width: 175px;
@@ -101,5 +125,11 @@
     font-size: 32px;
     color: white;
     font-family: sans-serif;
-    align-items: center;
+    text-align: center;
+    font-family: 'Roboto';
+    position: absolute;
+    left: 50%;
+    bottom: 190px;
+    transform: translate(-50%, -50%);
 }
+
