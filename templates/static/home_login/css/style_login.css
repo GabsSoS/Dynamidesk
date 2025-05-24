@@ -32,6 +32,7 @@
 
 }
 
+/* Titulo da aplicação */
 .title {
     font-size: 40px;
     font-family: "Roboto";
@@ -42,15 +43,15 @@
 /* espaço de login para o email */
 .login-email,
 .login-senha {
-    width: 300px;
+    width: 280px;
     height: 60px;
     border-radius: 30px;
-    border: 2px solid #ADB5BD;
+    border: none;
     margin-bottom: 20px;
     position: relative;
     padding-left: 20px;
+    padding-right: 20px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
- 
 }
 
 /* campo dentro do input de email e senha*/
@@ -64,12 +65,14 @@
     color: #038ad2;
     outline: none;
     border: solid 2px #038ad2;
+    box-shadow: 0px 2px 10px #038ad2;
     
 }
 
 .login-email:hover,
 .login-senha:hover {
     border: solid 2px #038ad2;
+    box-shadow: 0px 2px 10px #038ad2;
 }
 
 
@@ -81,6 +84,10 @@
     background-color: #1d3f6b;
     color: white;
     border: none;
+    font-family: "roboto-slab";
+    font-weight: 700;
+    font-style: normal;
+
 }
 
 .button-login:hover {
@@ -109,6 +116,7 @@
     background-color: #00a6ff;
     filter: blur(150px);
     right: 0px;
+    z-index: 1;
 }
 
 .iluminacao-2 {
@@ -119,17 +127,19 @@
     background-color: #00a6ff;
     filter: blur(150px);
     bottom: 0px;
+    z-index: 1;
 }
 
 .slogan {
     font-size: 32px;
     color: white;
-    font-family: sans-serif;
     text-align: center;
-    font-family: 'Roboto';
     position: absolute;
     left: 50%;
     bottom: 190px;
     transform: translate(-50%, -50%);
+    font-family: "roboto-slab";
+    font-weight: 700;
+    font-style: normal;
+    z-index: 2;
 }
-

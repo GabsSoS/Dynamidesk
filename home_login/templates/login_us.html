@@ -8,7 +8,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'home_login/css/style_login.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'home_login/css/reset.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'home_login/css/fonts.css' %}">
-    
+    <link rel="stylesheet" href="https://use.typekit.net/bei2lie.css">
+
+
     <title>Login</title>
 </head>
 
@@ -25,20 +27,25 @@
         </div>
         <!-- Bloco de Login -->
         <div class="bloco-direiro">
-            <main class="login-us">
-                <!-- Logo Dynamidesk -->
-                <img src="{% static 'home_login/img/Logo.png' %}" alt="">
-                <!-- Nome da aplicação -->
-                <h2 class="title">Dynamidesk</h2>
-                <!-- campo do login e-mail -->
-                <input class="login-email" type="email" placeholder="Digite seu e-mail">
-                <!-- campo de login seha -->
-                <input class="login-senha" type="password" placeholder="Digite seu e-mail">
-                <!-- botão de login -->
-                <button class="button-login">Login</button>
-            </main>
+            <!-- o CSRF serve para proteção contra ataques -->
+            {% csrf_token %} 
+            <form method="post">
+                <main class="login-us">
+                    <!-- Logo Dynamidesk -->
+                    <img src="{% static 'home_login/img/Logo.png' %}" alt="">
+                    <!-- Nome da aplicação -->
+                    <h2 class="title">Dynamidesk</h2>
+                    <!-- campo do login e-mail -->
+                    {{ form.email }}
+                    <!-- campo de login seha -->
+                    {{ form.password }}
+                    <!-- botão de login -->
+                    <button type="submit"  class="button-login">Login</button>
+                </main>
         </div>
     </div>
+
+    </form>
 </body>
 
 </html>
